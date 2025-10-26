@@ -1,0 +1,23 @@
+{
+  "name": "opstack-l2-chain",
+  "version": "1.0.0",
+  "description": "Layer 2 chain built on OPstack infrastructure with stablecoin fee payments.",
+  "chain": {
+    "id": 12345,
+    "name": "OPStack L2 Chain",
+    "rpcUrl": "https://rpc.opstack-l2-chain.example",
+    "blockTime": 2,
+    "consensus": "Proof of Stake",
+    "nativeCurrency": {
+      "name": "StableCoin",
+      "symbol": "STABLE",
+      "decimals": 18
+    },
+    "feeCurrency": "STABLE",
+    "explorer": "https://explorer.opstack-l2-chain.example"
+  },
+  "features": {
+    "bridging": true,
+    "stablecoinFees": true
+  }
+}

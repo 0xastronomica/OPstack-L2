@@ -1,0 +1,18 @@
+{
+  "feeStructure": {
+    "transactionFee": {
+      "amount": "0.01",
+      "currency": "stablecoin"
+    },
+    "gasFee": {
+      "amount": "0.001",
+      "currency": "stablecoin"
+    },
+    "minimumFee": {
+      "amount": "0.005",
+      "currency": "stablecoin"
+    }
+  },
+  "paymentMethod": "stablecoin",
+  "description": "This configuration defines the fee structure for transactions paid in stablecoin on the L2 chain."
+}

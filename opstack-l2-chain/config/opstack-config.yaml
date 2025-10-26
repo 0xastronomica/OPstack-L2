@@ -1,0 +1,20 @@
+network:
+  name: "OPStack L2 Chain"
+  chainId: 12345
+  rpcUrl: "https://rpc.opstack.example"
+  explorerUrl: "https://explorer.opstack.example"
+  nativeCurrency:
+    name: "StableCoin"
+    symbol: "STABLE"
+    decimals: 18
+  feeCurrency: "STABLE"
+  consensus:
+    type: "Proof of Stake"
+    validators: 100
+  block:
+    time: 2
+    gasLimit: 8000000
+  features:
+    - "EVM Compatibility"
+    - "Cross-Chain Transfers"
+    - "Stablecoin Fee Payments"

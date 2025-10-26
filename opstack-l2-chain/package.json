@@ -1,0 +1,23 @@
+{
+  "name": "opstack-l2-chain",
+  "version": "1.0.0",
+  "description": "A Layer 2 chain using OPstack infrastructure with stablecoin for network fees.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "deploy": "ts-node src/deploy/deploy.ts",
+    "test": "mocha --require ts-node/register 'test/**/*.test.ts'"
+  },
+  "dependencies": {
+    "ethers": "^5.0.0",
+    "typescript": "^4.0.0",
+    "ts-node": "^10.0.0",
+    "mocha": "^9.0.0",
+    "chai": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.0.0",
+    "@types/chai": "^4.0.0"
+  },
+  "license": "MIT"
+}
