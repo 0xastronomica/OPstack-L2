@@ -1,0 +1,22 @@
+[profile]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+
+[profile.dev]
+optimize = false
+debug = true
+
+[profile.release]
+optimize = true
+debug = false
+
+[chain]
+name = "opstack-l2-chain"
+network = "opstack"
+fees = { stablecoin = true }
+
+[settings]
+compiler = "solc"
+version = "0.8.0"

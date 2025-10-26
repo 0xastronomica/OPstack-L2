@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  op-node:
+    image: op-node:latest
+    container_name: op-node
+    ports:
+      - "8545:8545"
+    environment:
+      - NETWORK=opstack
+      - FEE_TOKEN=stablecoin
+    volumes:
+      - ./data:/data
+    networks:
+      - opstack-network
+
+  stablecoin:
+    image: stablecoin:latest
+    container_name: stablecoin
+    ports:
+      - "8546:8546"
+    environment:
+      - TOKEN_NAME=StableCoin
+      - TOKEN_SYMBOL=STABLE
+    networks:
+      - opstack-network
+
+networks:
+  opstack-network:
+    driver: bridge
